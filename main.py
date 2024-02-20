@@ -21,7 +21,7 @@ class Auto:
     def cantidadAsientos(self):
         cantidad=0
         for i in self.asientos:
-            if self.asientos[i] is not None:
+            if i is not None:
                 cantidad+=1
         return cantidad
     
