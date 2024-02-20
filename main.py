@@ -4,7 +4,7 @@ class Asiento:
         self.precio=precio
         self.registro=registro
     def cambiarColor(self,color):
-        colores=("rojo","verde","amarillo","negro","blanco")
+        colores=["rojo","verde","amarillo","negro","blanco"]
         if color in colores:
             self.color=color
 
@@ -18,14 +18,14 @@ class Auto:
         self.motor=motor
         self.registro=registro
     
-    def cantidadAsientos():
+    def cantidadAsientos(self):
         cantidad=0
         for i in self.asientos:
             if self.asientos[i] != None:
                 cantidad+=1
         return cantidad
     
-    def verificarIntegridad():
+    def verificarIntegridad(self):
         verificador="si"
         if (self.motor.registro==self.registro):
             for j in self.asientos:
@@ -46,10 +46,10 @@ class Motor:
         self.tipo=tipo
         self.registro=registro
     
-    def cambiarRegistro(registro):
+    def cambiarRegistro(self,registro):
         self.registro=registro
 
-    def asignarTipo(tipo):
+    def asignarTipo(self,tipo):
         tipos=("gasolina","electrico")
         if tipo in tipos:
             self.tipo=tipo
