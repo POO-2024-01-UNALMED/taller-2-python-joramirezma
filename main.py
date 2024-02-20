@@ -29,7 +29,7 @@ class Auto:
         verificador="si"
         if (self.motor.registro==self.registro):
             for j in self.asientos:
-                if j.registro is not None:
+                if j.registro is not None and j is not None:
                     if j.registro != self.registro:
                         verificador="no"
         else:
